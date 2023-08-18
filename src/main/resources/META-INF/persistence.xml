@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+<!-- unidades de persistencia para las propiedades de la BD -->
+
+
+    <!-- Ruta de las entidades a mapear en la bd, en caso de no agregarlo hibernete mapea todas las entidaes -->
+    <!-- <class>com.jsrdev.model</class> -->
+
+    <!-- TAG de la persistencia de la BD -->
+                                    <!-- JTA cuando usamos servidores externos, de transacciones automaticas-->
+    <persistence-unit name="store" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/> <!-- Driver to use in BD-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:store"/> <!-- Ruta de la BD -->
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+
+            <!-- Carac. internas de como se comunica la BD con nuestra aplicacion, ya que cada BD tiene su propio dialecto -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+            <!-- permite mostrar si se ralizo alguna op en la BD-->
+            <property name="hibernate.show_sql" value="true"/>
+
+            <!-- permite crear la bd y todas las propiedades de la bd-->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
