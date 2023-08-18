@@ -3,6 +3,7 @@ package com.jsrdev.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "products") // Nombre de la tabla en la BD
@@ -13,7 +14,21 @@ public class Product {
     private String name; //@Column(name = "names") // usada en caso de que el nombre de la columna en la Bd no sea la misma
     private String description;
     private BigDecimal price;
+    private final LocalDate registerDate = LocalDate.now();
 
+    @ManyToOne
+    private Category category;
+
+    public Product(String name, String description, BigDecimal price, Category category) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.category = category;
+    }
+
+    public Product() {
+
+    }
 
     public Long getId() {
         return id;
