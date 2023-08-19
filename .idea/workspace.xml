@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="add38b90-5d9b-41d3-bd37-9bdb0bb8e407" name="Changes" comment="add entity manager">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" afterDir="false" />
+    <list default="true" id="add38b90-5d9b-41d3-bd37-9bdb0bb8e407" name="Changes" comment="add mapeo de categories, relacionando con products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterProduct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/EntityManager" />
+        <entry key="$PROJECT_DIR$" value="feat/MapeoEntities02" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,7 +93,8 @@
       <updated>1692256895362</updated>
       <workItem from="1692256895396" duration="6854000" />
       <workItem from="1692263987299" duration="880000" />
-      <workItem from="1692315169922" duration="16061000" />
+      <workItem from="1692315169922" duration="16965000" />
+      <workItem from="1692386510928" duration="11093000" />
     </task>
     <task id="LOCAL-00001" summary="add hibernate and d2database dependencies">
       <option name="closed" value="true" />
@@ -113,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692339390526</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add mapeo de categories, relacionando con products">
+      <option name="closed" value="true" />
+      <created>1692342705407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692342705407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add hibernate and d2database dependencies" />
     <MESSAGE value="add entity manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entity manager" />
+    <MESSAGE value="add mapeo de categories, relacionando con products" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mapeo de categories, relacionando con products" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -14,4 +14,13 @@ public class CategoryDao {
     public void save(Category category) {
         this.entityManager.persist(category);
     }
+
+    public void update(Category category) {
+        this.entityManager.merge(category);
+    }
+
+    public void delete(Category category) {
+        category = this.entityManager.merge(category);
+        this.entityManager.remove(category);
+    }
 }
