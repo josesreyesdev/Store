@@ -8,15 +8,22 @@ import com.jsrdev.utils.JPAUtils;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegisterProduct {
 
     public static void main(String[] args) {
-        // saveTest();
+        saveTest();
 
         // updateTest();
 
-        deleteTest();
+        // deleteTest();
+
+        //getProductById();
+        //getAllProducts();
+        //getProductByName();
+        //getProductByCategory();
+        getSingleProductByPrice();
     }
 
     private static void saveTest() {
@@ -115,5 +122,48 @@ public class RegisterProduct {
         /* Aplicando el metodo remove y flush => puedo hacer rollback para regresar al estado anterior
          Aplicando el metodo remove y commit => estoy borrando de forma definitiva el registro */
 
+    }
+
+    private static void getProductById() {
+        EntityManager entityManager = JPAUtils.getEntityManager();
+        ProductDao productDao = new ProductDao(entityManager);
+
+        Product product1 = productDao.getProductById(1L);
+        System.out.println(product1.getName());
+    }
+
+    private static void getAllProducts() {
+        EntityManager entityManager = JPAUtils.getEntityManager();
+        ProductDao productDao = new ProductDao(entityManager);
+
+        List<Product> productList = productDao.getProducts();
+        productList.forEach(product -> System.out.println("Product:" + product.getDescription()));
+
+    }
+
+    private static void getProductByName() {
+        EntityManager entityManager = JPAUtils.getEntityManager();
+        ProductDao productDao = new ProductDao(entityManager);
+
+        List<Product> productList = productDao.getProductsByName("Samsung");
+        productList.forEach(product -> System.out.println("Product:" + product.getDescription()));
+
+    }
+
+    private static void getProductByCategory() {
+        EntityManager entityManager = JPAUtils.getEntityManager();
+        ProductDao productDao = new ProductDao(entityManager);
+
+        List<Product> productList = productDao.getProductsByCategory("PHONES");
+        productList.forEach(product -> System.out.println("Product:" + product.getDescription()));
+
+    }
+
+    private static void getSingleProductByPrice() {
+        EntityManager entityManager = JPAUtils.getEntityManager();
+        ProductDao productDao = new ProductDao(entityManager);
+
+        BigDecimal price = productDao.getPriceByNameOfProduct("Samsung");
+        System.out.println("Price:" + price);
     }
 }

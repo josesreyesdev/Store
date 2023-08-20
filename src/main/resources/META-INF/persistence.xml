@@ -24,6 +24,9 @@
             <!-- permite mostrar si se ralizo alguna op en la BD-->
             <property name="hibernate.show_sql" value="true"/>
 
+            <!-- Format al SQL -->
+            <property name="hibernate.format_sql" value="true"/>
+
             <!-- permite crear la bd y todas las propiedades de la bd-->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
