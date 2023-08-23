@@ -1,6 +1,5 @@
 package com.jsrdev.dao;
 
-import com.jsrdev.model.Category;
 import com.jsrdev.model.Product;
 
 import javax.persistence.EntityManager;
