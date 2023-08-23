@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="add38b90-5d9b-41d3-bd37-9bdb0bb8e407" name="Changes" comment="add method save, update and delete for a different states">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
-    </list>
+    <list default="true" id="add38b90-5d9b-41d3-bd37-9bdb0bb8e407" name="Changes" comment="add method save, update and delete for a different states" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
