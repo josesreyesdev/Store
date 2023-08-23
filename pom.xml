@@ -22,10 +22,6 @@
                 <version>3.10.1</version>
                 <configuration>
                     <release>17</release>
-                    <!--
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <optimize>true</optimize> -->
                 </configuration>
             </plugin>
         </plugins>
