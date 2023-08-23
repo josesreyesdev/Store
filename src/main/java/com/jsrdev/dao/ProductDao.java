@@ -33,13 +33,13 @@ public class ProductDao {
     }
 
     public List<Product> getProducts() {
-        String jpql = "SELECT P FROM Product AS P";
+        String jpql = "SELECT P FROM Product P";
         return entityManager.createQuery(jpql, Product.class).getResultList();
     }
 
      /* Queries with filters */
     public List<Product> getProductsByName(String name) {
-        String jpql = "SELECT P FROM Product AS P WHERE P.name =: name";
+        String jpql = "SELECT P FROM Product P WHERE P.name =: name";
         //String jpql2 = "SELECT P FROM Product AS P WHERE P.name =: name AND P.description =: description"; // consulta con mas parametros
 
         // set parameter es en que columna y el valor a consultar
@@ -49,7 +49,7 @@ public class ProductDao {
     }
 
     public List<Product> getProductsByCategory(String categoryName) {
-        String jpql = "SELECT P FROM Product AS P WHERE P.category.name =: categoryName";
+        String jpql = "SELECT P FROM Product P WHERE P.category.name =: categoryName";
         return entityManager.createQuery(jpql, Product.class)
                 .setParameter("categoryName", categoryName)
                 .getResultList();
