@@ -29,7 +29,8 @@ public class RegisterProduct {
     private static void saveTest() {
         Category phonesCategory = new Category("PHONES");
 
-        Product phone = new Product("Samsung",
+        Product phone = new Product(
+                "Samsung",
                 "Samsung modelo: M22, capacidad: 128 GB",
                 new BigDecimal("10000"),
                 phonesCategory
