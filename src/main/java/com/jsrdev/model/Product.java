@@ -5,6 +5,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@SuppressWarnings("all")
 @Entity
 @Table(name = "products") // Nombre de la tabla en la BD
 public class Product {

@@ -4,27 +4,21 @@ import javax.persistence.*;
 
 @SuppressWarnings("all")
 @Entity
-@Table(name = "categories")
-public class Category {
+@Table(name = "clients")
+public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String dni;
 
-    public Category(String name) {
+    public Client(String name, String dni) {
         this.name = name;
-    }
-
-    public Category() {
-
+        this.dni = dni;
     }
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -33,5 +27,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 }

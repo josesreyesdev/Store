@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4c2965-bb7f-489a-a816-ea23ec13a1b7" name="Changes" comment="update workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +80,7 @@
       <workItem from="1692583734396" duration="313000" />
       <workItem from="1692822374748" duration="439000" />
       <workItem from="1692992109730" duration="11045000" />
+      <workItem from="1693172331109" duration="7164000" />
     </task>
     <servers />
   </component>
