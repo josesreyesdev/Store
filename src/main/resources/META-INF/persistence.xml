@@ -14,9 +14,9 @@
     <persistence-unit name="store" transaction-type="RESOURCE_LOCAL">
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/> <!-- Driver to use in BD-->
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:store"/> <!-- Ruta de la BD -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:C:\Users\Jose\Desktop\Alura\Backend\Projects\store\DB-H2/store"/> <!-- value="jdbc:h2:mem:store" Ruta de la BD -->
             <property name="javax.persistence.jdbc.user" value="sa"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.password" value="123456"/>
 
             <!-- Carac. internas de como se comunica la BD con nuestra aplicacion, ya que cada BD tiene su propio dialecto -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
@@ -28,7 +28,7 @@
             <property name="hibernate.format_sql" value="true"/>
 
             <!-- permite crear la bd y todas las propiedades de la bd-->
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/> <!-- value="update" -->
         </properties>
     </persistence-unit>
 </persistence>
