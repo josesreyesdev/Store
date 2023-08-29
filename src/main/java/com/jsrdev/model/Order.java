@@ -3,6 +3,7 @@ package com.jsrdev.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("all")
@@ -13,24 +14,29 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDate date = LocalDate.now();
-    private BigDecimal totalValue;
+    private BigDecimal totalValue = new BigDecimal(0);
     @ManyToOne
     private Client client;
 
-    @ManyToMany
+    /*@ManyToMany
     @JoinTable(name = "order_items")
     private List<Product> products;
+    */
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     public Order(Client client) {
         this.client = client;
     }
+    
+    public void addItems( OrderItem orderItem) {
+        orderItem.setOrder(this);
+        this.orderItems.add(orderItem);
+        this.totalValue = this.totalValue.add(orderItem.getValue());
+    }
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public LocalDate getDate() {
