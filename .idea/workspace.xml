@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb4c2965-bb7f-489a-a816-ea23ec13a1b7" name="Changes" comment="add entities and relations">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ClientDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" afterDir="false" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="add advanced queries">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/vo/SalesReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feat/relations06" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,7 +44,6 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -62,14 +59,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.jsrdev.dao" />
-      <recent name="com.jsrdev.model" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jsrdev.dao" />
+      <recent name="com.jsrdev.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegisterOrder">
+  <component name="RunManager" selected="Application.RegisterProduct">
     <configuration name="RegisterOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.RegisterOrder" />
       <module name="store" />
@@ -98,15 +91,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RegisterOrder" />
         <item itemvalue="Application.RegisterProduct" />
+        <item itemvalue="Application.RegisterOrder" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb4c2965-bb7f-489a-a816-ea23ec13a1b7" name="Changes" comment="update workspace.xml" />
+      <changelist id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="add method save, update and delete for a different states" />
       <created>1692256895362</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -114,28 +107,18 @@
       <workItem from="1692256895396" duration="2841000" />
       <workItem from="1692583734396" duration="313000" />
       <workItem from="1692822374748" duration="439000" />
-      <workItem from="1692992109730" duration="11045000" />
-      <workItem from="1693172331109" duration="16450000" />
-      <workItem from="1693246428260" duration="11203000" />
+      <workItem from="1692908470578" duration="1803000" />
+      <workItem from="1693332926360" duration="7443000" />
     </task>
-    <task id="LOCAL-00001" summary="add entities and relations">
-      <option name="closed" value="true" />
-      <created>1693192939353</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693192939353</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update workspace.xml" />
-    <MESSAGE value="add entities and relations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entities and relations" />
+    <MESSAGE value="add method save, update and delete for a different states" />
+    <MESSAGE value="add advanced queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="add advanced queries" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

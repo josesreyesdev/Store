@@ -6,9 +6,11 @@ import com.jsrdev.dao.OrderDao;
 import com.jsrdev.dao.ProductDao;
 import com.jsrdev.model.*;
 import com.jsrdev.utils.JPAUtils;
+import com.jsrdev.vo.SalesReport;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegisterOrder {
     public static void main(String[] args) {
@@ -32,6 +34,20 @@ public class RegisterOrder {
         orderDao.save(order);
 
         entityManager.getTransaction().commit();
+
+        //BigDecimal totalValueSold = orderDao.totalValueSold();
+        //Double averageValueSold = orderDao.averageValueSold();
+
+        List<Object[]> salesReport = orderDao.salesReport();
+        for (Object[] obj: salesReport) {
+            System.out.println(obj[0] +" , "+ obj[1] +" , "+ obj[2]);
+            System.out.println(obj[0]);
+            System.out.println(obj[1]);
+            System.out.println(obj[2]);
+        }
+
+        List<SalesReport> salesReportList = orderDao.salesReportVO();
+        salesReportList.forEach(System.out::println);
     }
 
     private static void registerProduct() {

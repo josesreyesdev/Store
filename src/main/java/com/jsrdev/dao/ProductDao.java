@@ -57,8 +57,7 @@ public class ProductDao {
 
     //Limit data in the query
     public BigDecimal getPriceByNameOfProduct(String name) {
-        String jpql = "SELECT P.price FROM Product P WHERE P.name =: name";
-        return entityManager.createQuery(jpql, BigDecimal.class)
+        return entityManager.createNamedQuery("Product.priceEnquiry", BigDecimal.class)
                 .setParameter("name", name)
                 .getSingleResult();
     }

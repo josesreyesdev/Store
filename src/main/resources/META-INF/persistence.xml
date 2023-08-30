@@ -7,7 +7,7 @@
     <persistence-unit name="store" transaction-type="RESOURCE_LOCAL">
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:C:\Users\Jose\Desktop\Alura\Backend\Projects\store\DB-H2/store"/> <!-- value="jdbc:h2:mem:store" Ruta de la BD -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:C:\Users\Jose\Desktop\Alura\Backend\Projects\store\DB-H2/store"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value="123456"/>
 

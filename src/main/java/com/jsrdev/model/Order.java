@@ -17,11 +17,6 @@ public class Order {
     private BigDecimal totalValue = new BigDecimal(0);
     @ManyToOne
     private Client client;
-
-    /*@ManyToMany
-    @JoinTable(name = "order_items")
-    private List<Product> products;
-    */
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
