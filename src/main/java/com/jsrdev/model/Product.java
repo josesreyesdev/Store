@@ -8,6 +8,10 @@ import java.time.LocalDate;
 @SuppressWarnings("all")
 @Entity
 @Table(name = "products") // Nombre de la tabla en la BD
+@NamedQuery( // consulta por precio de producto
+        name = "Product.priceEnquiry",
+        query = "SELECT P.price FROM Product P WHERE P.name =: name"
+)
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // La estrategia depende de la BD utilizada usualmente es Identity
