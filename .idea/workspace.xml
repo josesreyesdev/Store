@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="add advanced queries">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/vo/SalesReport.java" afterDir="false" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="add entities and relations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/relations06" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +56,7 @@
       <recent name="com.jsrdev.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegisterProduct">
+  <component name="RunManager" selected="Application.RegisterOrder">
     <configuration name="RegisterOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.RegisterOrder" />
       <module name="store" />
@@ -91,6 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegisterOrder" />
+        <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterOrder" />
       </list>
@@ -118,7 +114,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add method save, update and delete for a different states" />
     <MESSAGE value="add advanced queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="add advanced queries" />
+    <MESSAGE value="add entities and relations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add entities and relations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
