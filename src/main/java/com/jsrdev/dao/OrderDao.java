@@ -75,4 +75,9 @@ public class OrderDao {
         return entityManager.createQuery(jpql, SalesReport.class).getResultList();
     }
 
+    // Consultar pedido con cliente mediante JOIN FETCH
+    public Order getOrderWithClient(Long id) {
+        String jpql = "SELECT O FROM Order O JOIN FETCH O.client WHERE O.id = :id";
+        return entityManager.createQuery(jpql, Order.class).setParameter("id", id).getSingleResult();
+    }
 }

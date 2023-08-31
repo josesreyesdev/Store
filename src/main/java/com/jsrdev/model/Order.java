@@ -15,10 +15,18 @@ public class Order {
     private Long id;
     private LocalDate date = LocalDate.now();
     private BigDecimal totalValue = new BigDecimal(0);
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
 
     public Order() {}
 
