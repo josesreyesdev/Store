@@ -12,6 +12,7 @@ public class Client {
     private String name;
     private String dni;
 
+    public Client() {}
     public Client(String name, String dni) {
         this.name = name;
         this.dni = dni;

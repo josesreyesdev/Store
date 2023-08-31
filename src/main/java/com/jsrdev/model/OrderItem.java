@@ -24,6 +24,7 @@ public class OrderItem {
     * itemOrder 4 product 3 order 1
     * */
 
+    public OrderItem(){}
     public OrderItem(int quantity, Product product, Order order) {
         this.quantity = quantity;
         this.product = product;
