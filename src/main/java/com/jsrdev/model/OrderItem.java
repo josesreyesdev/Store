@@ -13,9 +13,9 @@ public class OrderItem {
     private int quantity;
     private BigDecimal unitPrice;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Product product;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Order order;
 
     /*itemOrder 1 product 1 order 2

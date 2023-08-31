@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="update h2database version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/LoadRecords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestLoadRecords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/utils/category.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/utils/client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/utils/product.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ClientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/OrderDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/OrderItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestLoadRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestLoadRecords.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/advancedQueries07" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,10 +109,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestLoadRecords" />
-        <item itemvalue="Application.RegisterOrder" />
         <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterOrder" />
-        <item itemvalue="Application.RegisterProduct" />
+        <item itemvalue="Application.TestLoadRecords" />
+        <item itemvalue="Application.RegisterOrder" />
       </list>
     </recent_temporary>
   </component>
