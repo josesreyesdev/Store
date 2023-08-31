@@ -23,4 +23,9 @@ public class CategoryDao {
         category = this.entityManager.merge(category);
         this.entityManager.remove(category);
     }
+
+    public Category getCategoryByName( String name) {
+        String jpql = "SELECT C FROM Category C WHERE C.name = :name";
+        return entityManager.createQuery(jpql, Category.class).setParameter("name", name).getSingleResult();
+    }
 }

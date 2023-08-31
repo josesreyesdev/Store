@@ -7,8 +7,8 @@ import java.time.LocalDate;
 
 @SuppressWarnings("all")
 @Entity
-@Table(name = "products") // Nombre de la tabla en la BD
-@NamedQuery( // consulta por precio de producto
+@Table(name = "products")
+@NamedQuery(
         name = "Product.priceEnquiry",
         query = "SELECT P.price FROM Product P WHERE P.name =: name"
 )
@@ -31,9 +31,7 @@ public class Product {
         this.category = category;
     }
 
-    public Product() {
-
-    }
+    public Product() {}
 
     public Long getId() {
         return id;

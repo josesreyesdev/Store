@@ -33,6 +33,7 @@ public class RegisterOrder {
         clientDao.save(client);
         orderDao.save(order);
 
+        
         entityManager.getTransaction().commit();
 
         //BigDecimal totalValueSold = orderDao.totalValueSold();
