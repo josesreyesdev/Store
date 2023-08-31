@@ -48,14 +48,14 @@ public class LoadRecords {
 
     }
 
-    private static void loadProduct(String type, ProductDao productoDao, CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
+    private static void loadProduct(String type, ProductDao productDao, CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
         List<String> productsTxt =readFile(type);
         for(int i=0;i<productsTxt.size();i++) {
             String[] line = productsTxt.get(i).split(";");
             if(line.length>1) {
                 Category category = categoryDao.getCategoryByName(line[3]);
                 Product product = new Product(line[4],line[0],new BigDecimal(line[1]), category);
-                productoDao.save(product);
+                productDao.save(product);
                 em.flush();
             }
         }
