@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="update h2database version" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="rename properties">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/LoadRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/LoadRecords.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feat/queryPerformance08" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,8 +107,6 @@
         <item itemvalue="Application.TestLoadRecords" />
         <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterOrder" />
-        <item itemvalue="Application.TestLoadRecords" />
-        <item itemvalue="Application.RegisterOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +125,28 @@
       <workItem from="1693332926360" duration="7443000" />
       <workItem from="1693417987352" duration="12955000" />
       <workItem from="1693456828492" duration="2582000" />
+      <workItem from="1693505949743" duration="4292000" />
+      <workItem from="1693529409090" duration="1275000" />
+      <workItem from="1693540092415" duration="1891000" />
+      <workItem from="1693590955365" duration="5207000" />
     </task>
+    <task id="LOCAL-00001" summary="strategies EAGER/LAZY">
+      <option name="closed" value="true" />
+      <created>1693465361171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693465361171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="rename properties">
+      <option name="closed" value="true" />
+      <created>1693516131283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693516131283</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +167,9 @@
     <MESSAGE value="add method save, update and delete for a different states" />
     <MESSAGE value="add advanced queries" />
     <MESSAGE value="add entities and relations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entities and relations" />
+    <MESSAGE value="strategies EAGER/LAZY" />
+    <MESSAGE value="rename properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename properties" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
