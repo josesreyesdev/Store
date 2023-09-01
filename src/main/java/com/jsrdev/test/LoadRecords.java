@@ -25,11 +25,11 @@ public class LoadRecords {
         OrderDao orderDao = new OrderDao(em);
         em.getTransaction().begin();
 
-        loadCategory("category",categoryDao,em);
+        loadCategory(categoryDao,em);
 
-        loadProduct("product",productDao,categoryDao,em);
+        loadProduct(productDao,categoryDao,em);
 
-        loadClient("client",clientDao,em);
+        loadClient(clientDao,em);
 
         List<Client> clientList = clientDao.getClients();
         List<Order> orderList= new ArrayList<>();
@@ -48,41 +48,39 @@ public class LoadRecords {
 
     }
 
-    private static void loadProduct(String type, ProductDao productDao, CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
-        List<String> productsTxt =readFile(type);
-        for(int i=0;i<productsTxt.size();i++) {
-            String[] line = productsTxt.get(i).split(";");
-            if(line.length>1) {
+    private static void loadProduct(ProductDao productDao, CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
+        List<String> productsTxt =readFile("product");
+        for (String s : productsTxt) {
+            String[] line = s.split(";");
+            if (line.length > 1) {
                 Category category = categoryDao.getCategoryByName(line[3]);
-                Product product = new Product(line[4],line[0],new BigDecimal(line[1]), category);
+                Product product = new Product(line[4], line[0], new BigDecimal(line[1]), category);
                 productDao.save(product);
                 em.flush();
             }
         }
     }
 
-    private static void loadCategory(String type, CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
-        List<String> categoriesTxt =readFile(type);
-        for(int i=0;i<categoriesTxt.size();i++) {
-            String[] line = categoriesTxt.get(i).split(";");
-            if(line.length==1) {
-                Category category = new Category(categoriesTxt.get(i));
+    private static void loadCategory(CategoryDao categoryDao, EntityManager em) throws FileNotFoundException {
+        List<String> categoriesTxt =readFile("category");
+        for (String s : categoriesTxt) {
+            String[] line = s.split(";");
+            if (line.length == 1) {
+                Category category = new Category(s);
                 categoryDao.save(category);
                 em.flush();
             }
         }
     }
 
-    private static void loadClient(String type, ClientDao clientDao, EntityManager em) throws FileNotFoundException {
-        List<String> clientsTxt =readFile(type);
-        for(int i=0;i<clientsTxt.size();i++) {
-            String[] line = clientsTxt.get(i).split("~");
-            System.out.println(line[0]+line[1]);
-            if(line.length>1) {
-                Client client= new Client(line[0],line[1]);
-                clientDao.save(client);
-                em.flush();
-            }
+    private static void loadClient(ClientDao clientDao, EntityManager em) throws FileNotFoundException {
+        List<String> clientsTxt =readFile("client");
+        for (String s : clientsTxt) {
+            String[] line = s.split("~");
+            System.out.println(line[0] + line[1]);
+            Client client = new Client(line[0], line[1]);
+            clientDao.save(client);
+            em.flush();
         }
     }
 
