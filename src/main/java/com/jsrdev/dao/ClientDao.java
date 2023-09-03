@@ -35,7 +35,7 @@ public class ClientDao {
     }
 
     public List<Client> getClientByName(String name){
-        String jpql =" SELECT C FROM Client C WHERE C.name=:name ";
+        String jpql =" SELECT C FROM Client C WHERE C.personalData.name = :name ";
         return entityManager.createQuery(jpql,Client.class).setParameter("name", name).getResultList();
     }
 }
