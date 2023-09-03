@@ -45,7 +45,7 @@ public class ProductDao {
 
      /* Queries with filters */
     public List<Product> getProductsByName(String name) {
-        String jpql = "SELECT P FROM Product P WHERE P.name =: name";
+        String jpql = "SELECT P FROM Product P WHERE P.name = :name";
 
         // set parameter es en que columna y el valor a consultar
         return entityManager.createQuery(jpql, Product.class)
@@ -54,7 +54,7 @@ public class ProductDao {
     }
 
     public List<Product> getProductsByCategory(String categoryName) {
-        String jpql = "SELECT P FROM Product P WHERE P.category.name =: categoryName";
+        String jpql = "SELECT P FROM Product P WHERE P.category.categoryId.name = :categoryName";
         return entityManager.createQuery(jpql, Product.class)
                 .setParameter("categoryName", categoryName)
                 .getResultList();

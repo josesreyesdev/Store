@@ -25,7 +25,7 @@ public class CategoryDao {
     }
 
     public Category getCategoryByName( String name) {
-        String jpql = "SELECT C FROM Category C WHERE C.name = :name";
+        String jpql = "SELECT C FROM Category C WHERE C.categoryId.name = :name";
         return entityManager.createQuery(jpql, Category.class).setParameter("name", name).getSingleResult();
     }
 }

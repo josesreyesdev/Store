@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="Inheritance mapping">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/CategoryId.java" afterDir="false" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="rename properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Electronic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Electronic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/jsrdev/test/RegisterOrder.java" root0="SKIP_INSPECTION" />
@@ -105,6 +105,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestOfParameters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.TestOfParameters" />
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jsrdev.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPerformance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.TestPerformance" />
       <module name="store" />
@@ -124,7 +137,7 @@
         <item itemvalue="Application.TestLoadRecords" />
         <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterOrder" />
-        <item itemvalue="Application.TestLoadRecords" />
+        <item itemvalue="Application.TestOfParameters" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +160,6 @@
       <workItem from="1693529409090" duration="1275000" />
       <workItem from="1693540092415" duration="1891000" />
       <workItem from="1693590955365" duration="5207000" />
-      <workItem from="1693687634891" duration="5804000" />
     </task>
     <task id="LOCAL-00001" summary="strategies EAGER/LAZY">
       <option name="closed" value="true" />
@@ -165,23 +177,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693516131283</updated>
     </task>
-    <task id="LOCAL-00003" summary="Simplifying entities with Embeddable">
-      <option name="closed" value="true" />
-      <created>1693726012940</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1693726012940</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Inheritance mapping">
-      <option name="closed" value="true" />
-      <created>1693726938795</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1693726938795</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,9 +200,7 @@
     <MESSAGE value="add entities and relations" />
     <MESSAGE value="strategies EAGER/LAZY" />
     <MESSAGE value="rename properties" />
-    <MESSAGE value="Simplifying entities with Embeddable" />
-    <MESSAGE value="Inheritance mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inheritance mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename properties" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
