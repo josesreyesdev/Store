@@ -12,11 +12,12 @@ import java.time.LocalDate;
         name = "Product.priceEnquiry",
         query = "SELECT P.price FROM Product P WHERE P.name =: name"
 )
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //JOIN => para distribucion en cada tabla
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // La estrategia depende de la BD utilizada usualmente es Identity
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name; //@Column(name = "names") // usada en caso de que el nombre de la columna en la Bd no sea la misma
+    private String name; //@Column(name = "names")
     private String description;
     private BigDecimal price;
     private final LocalDate registerDate = LocalDate.now();

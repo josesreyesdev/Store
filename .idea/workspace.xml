@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="queries jpql with optional parameters (Criteria&#10;API)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/PersonalData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestPerformance.java" afterDir="false" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="Simplifying entities with Embeddable">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Electronic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <workItem from="1693529409090" duration="1275000" />
       <workItem from="1693540092415" duration="1891000" />
       <workItem from="1693590955365" duration="5207000" />
-      <workItem from="1693687634891" duration="3353000" />
+      <workItem from="1693687634891" duration="4359000" />
     </task>
     <task id="LOCAL-00001" summary="strategies EAGER/LAZY">
       <option name="closed" value="true" />
@@ -165,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693516131283</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Simplifying entities with Embeddable">
+      <option name="closed" value="true" />
+      <created>1693726012940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693726012940</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +195,8 @@
     <MESSAGE value="add entities and relations" />
     <MESSAGE value="strategies EAGER/LAZY" />
     <MESSAGE value="rename properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename properties" />
+    <MESSAGE value="Simplifying entities with Embeddable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplifying entities with Embeddable" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
