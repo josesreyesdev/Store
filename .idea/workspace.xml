@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="rename properties">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestOfParameters.java" afterDir="false" />
+    <list default="true" id="1738d2de-b267-49e7-bd34-7c5b8b0f5a87" name="Changes" comment="queries jpql with optional parameters (Criteria&#10;API)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/PersonalData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/test/TestPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsrdev/model/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <recent name="C:\Users\Jose\Desktop\Alura\Backend\Projects\store\src\main\resources\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestOfParameters">
+  <component name="RunManager" selected="Application.TestPerformance">
     <configuration name="RegisterOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.RegisterOrder" />
       <module name="store" />
@@ -103,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOfParameters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.TestOfParameters" />
+    <configuration name="TestPerformance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jsrdev.test.TestPerformance" />
       <module name="store" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestOfParameters" />
+        <item itemvalue="Application.TestPerformance" />
         <item itemvalue="Application.TestLoadRecords" />
         <item itemvalue="Application.RegisterProduct" />
         <item itemvalue="Application.RegisterOrder" />
@@ -145,6 +147,7 @@
       <workItem from="1693529409090" duration="1275000" />
       <workItem from="1693540092415" duration="1891000" />
       <workItem from="1693590955365" duration="5207000" />
+      <workItem from="1693687634891" duration="3353000" />
     </task>
     <task id="LOCAL-00001" summary="strategies EAGER/LAZY">
       <option name="closed" value="true" />
