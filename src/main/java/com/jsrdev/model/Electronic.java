@@ -2,7 +2,6 @@ package com.jsrdev.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.math.BigDecimal;
 
 @SuppressWarnings("all")
 @Entity

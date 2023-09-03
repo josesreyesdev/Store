@@ -38,6 +38,8 @@ public class RegisterOrder {
 
         //BigDecimal totalValueSold = orderDao.totalValueSold();
         //Double averageValueSold = orderDao.averageValueSold();
+        Category category = entityManager.find(Category.class, new CategoryId("PHONES", "Password1234"));
+        System.out.println(category.getName()); // Phones
 
         List<Object[]> salesReport = orderDao.salesReport();
         for (Object[] obj: salesReport) {

@@ -1,9 +1,10 @@
 package com.jsrdev.model;
 
 import javax.persistence.Embeddable;
+import java.io.Serializable;
 
 @Embeddable
-public class PersonalData {
+public class PersonalData implements Serializable {
     private String name;
     private String dni;
 
